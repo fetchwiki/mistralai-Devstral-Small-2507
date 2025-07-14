@@ -1,0 +1,70 @@
+{
+  "model_info": {
+    "architecture": "MistralForCausalLM",
+    "model_type": "mistral",
+    "vocab_size": 131072,
+    "hidden_size": 5120,
+    "num_layers": 40,
+    "num_attention_heads": 32
+  },
+  "model_files": [
+    {
+      "name": "consolidated.safetensors",
+      "size": 47144846024,
+      "size_formatted": "43GB"
+    },
+    {
+      "name": "model-00001-of-00010.safetensors",
+      "size": 4781571736,
+      "size_formatted": "4GB"
+    },
+    {
+      "name": "model-00002-of-00010.safetensors",
+      "size": 4781592784,
+      "size_formatted": "4GB"
+    },
+    {
+      "name": "model-00003-of-00010.safetensors",
+      "size": 4781592800,
+      "size_formatted": "4GB"
+    },
+    {
+      "name": "model-00004-of-00010.safetensors",
+      "size": 4886471600,
+      "size_formatted": "4GB"
+    },
+    {
+      "name": "model-00005-of-00010.safetensors",
+      "size": 4781592824,
+      "size_formatted": "4GB"
+    },
+    {
+      "name": "model-00006-of-00010.safetensors",
+      "size": 4781592816,
+      "size_formatted": "4GB"
+    },
+    {
+      "name": "model-00007-of-00010.safetensors",
+      "size": 4886471600,
+      "size_formatted": "4GB"
+    },
+    {
+      "name": "model-00008-of-00010.safetensors",
+      "size": 4781592824,
+      "size_formatted": "4GB"
+    },
+    {
+      "name": "model-00009-of-00010.safetensors",
+      "size": 4781592816,
+      "size_formatted": "4GB"
+    },
+    {
+      "name": "model-00010-of-00010.safetensors",
+      "size": 3900777072,
+      "size_formatted": "3GB"
+    }
+  ],
+  "total_count": 11,
+  "source_url": "https://huggingface.co/mistralai/Devstral-Small-2507",
+  "generated_at": "2025-07-14T15:18:37Z"
+}
