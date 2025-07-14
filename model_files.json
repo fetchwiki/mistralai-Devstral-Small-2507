@@ -1,70 +1,687 @@
 {
   "model_info": {
+    "name": "mistralai/Devstral-Small-2507",
     "architecture": "MistralForCausalLM",
     "model_type": "mistral",
     "vocab_size": 131072,
     "hidden_size": 5120,
     "num_layers": 40,
-    "num_attention_heads": 32
+    "num_attention_heads": 32,
+    "max_position_embeddings": 131072,
+    "license": null,
+    "language": null,
+    "pipeline_tag": null
+  },
+  "repository_info": {
+    "source_url": "https://huggingface.co/mistralai/Devstral-Small-2507",
+    "downloads": 0,
+    "likes": 0,
+    "created_at": null,
+    "last_modified": null,
+    "description": "HuggingFace model: mistralai/Devstral-Small-2507"
   },
   "model_files": [
     {
       "name": "consolidated.safetensors",
       "size": 47144846024,
-      "size_formatted": "43GB"
+      "size_formatted": "43GB",
+      "type": "safetensors",
+      "isLFS": true,
+      "category": "model",
+      "tensor_count": 363,
+      "tensor_info": {
+        "total_tensors": 363,
+        "dtypes": {
+          "BF16": 363
+        },
+        "total_parameters": 23572403200,
+        "layer_info": {
+          "layers": 360,
+          "norm": 1,
+          "output": 1,
+          "tok_embeddings": 1
+        }
+      },
+      "sample_tensors": "    - layers.0.attention.wk.weight: shape=[1024,5120], dtype=BF16, params=5,242,880\n    - layers.0.attention.wo.weight: shape=[5120,4096], dtype=BF16, params=20,971,520\n    - layers.0.attention.wq.weight: shape=[4096,5120], dtype=BF16, params=20,971,520\n    - layers.0.attention.wv.weight: shape=[1024,5120], dtype=BF16, params=5,242,880\n    - layers.0.attention_norm.weight: shape=[5120], dtype=BF16, params=5,120"
     },
     {
       "name": "model-00001-of-00010.safetensors",
       "size": 4781571736,
-      "size_formatted": "4GB"
+      "size_formatted": "4GB",
+      "type": "safetensors",
+      "isLFS": true,
+      "category": "model",
+      "tensor_count": 32,
+      "tensor_info": {
+        "total_tensors": 32,
+        "dtypes": {
+          "BF16": 32
+        },
+        "total_parameters": 2390784000,
+        "layer_info": {
+          "model": 32
+        }
+      },
+      "sample_tensors": "    - model.embed_tokens.weight: shape=[131072,5120], dtype=BF16, params=671,088,640\n    - model.layers.0.input_layernorm.weight: shape=[5120], dtype=BF16, params=5,120\n    - model.layers.0.mlp.down_proj.weight: shape=[5120,32768], dtype=BF16, params=167,772,160\n    - model.layers.0.mlp.gate_proj.weight: shape=[32768,5120], dtype=BF16, params=167,772,160\n    - model.layers.0.mlp.up_proj.weight: shape=[32768,5120], dtype=BF16, params=167,772,160"
     },
     {
       "name": "model-00002-of-00010.safetensors",
       "size": 4781592784,
-      "size_formatted": "4GB"
+      "size_formatted": "4GB",
+      "type": "safetensors",
+      "isLFS": true,
+      "category": "model",
+      "tensor_count": 37,
+      "tensor_info": {
+        "total_tensors": 37,
+        "dtypes": {
+          "BF16": 37
+        },
+        "total_parameters": 2390794240,
+        "layer_info": {
+          "model": 37
+        }
+      },
+      "sample_tensors": "    - model.layers.3.input_layernorm.weight: shape=[5120], dtype=BF16, params=5,120\n    - model.layers.3.mlp.down_proj.weight: shape=[5120,32768], dtype=BF16, params=167,772,160\n    - model.layers.3.mlp.gate_proj.weight: shape=[32768,5120], dtype=BF16, params=167,772,160\n    - model.layers.3.mlp.up_proj.weight: shape=[32768,5120], dtype=BF16, params=167,772,160\n    - model.layers.3.post_attention_layernorm.weight: shape=[5120], dtype=BF16, params=5,120"
     },
     {
       "name": "model-00003-of-00010.safetensors",
       "size": 4781592800,
-      "size_formatted": "4GB"
+      "size_formatted": "4GB",
+      "type": "safetensors",
+      "isLFS": true,
+      "category": "model",
+      "tensor_count": 37,
+      "tensor_info": {
+        "total_tensors": 37,
+        "dtypes": {
+          "BF16": 37
+        },
+        "total_parameters": 2390794240,
+        "layer_info": {
+          "model": 37
+        }
+      },
+      "sample_tensors": "    - model.layers.10.input_layernorm.weight: shape=[5120], dtype=BF16, params=5,120\n    - model.layers.10.mlp.down_proj.weight: shape=[5120,32768], dtype=BF16, params=167,772,160\n    - model.layers.10.mlp.gate_proj.weight: shape=[32768,5120], dtype=BF16, params=167,772,160\n    - model.layers.10.mlp.up_proj.weight: shape=[32768,5120], dtype=BF16, params=167,772,160\n    - model.layers.10.post_attention_layernorm.weight: shape=[5120], dtype=BF16, params=5,120"
     },
     {
       "name": "model-00004-of-00010.safetensors",
       "size": 4886471600,
-      "size_formatted": "4GB"
+      "size_formatted": "4GB",
+      "type": "safetensors",
+      "isLFS": true,
+      "category": "model",
+      "tensor_count": 43,
+      "tensor_info": {
+        "total_tensors": 43,
+        "dtypes": {
+          "BF16": 43
+        },
+        "total_parameters": 2443233280,
+        "layer_info": {
+          "model": 43
+        }
+      },
+      "sample_tensors": "    - model.layers.11.input_layernorm.weight: shape=[5120], dtype=BF16, params=5,120\n    - model.layers.11.mlp.down_proj.weight: shape=[5120,32768], dtype=BF16, params=167,772,160\n    - model.layers.11.post_attention_layernorm.weight: shape=[5120], dtype=BF16, params=5,120\n    - model.layers.12.input_layernorm.weight: shape=[5120], dtype=BF16, params=5,120\n    - model.layers.12.mlp.down_proj.weight: shape=[5120,32768], dtype=BF16, params=167,772,160"
     },
     {
       "name": "model-00005-of-00010.safetensors",
       "size": 4781592824,
-      "size_formatted": "4GB"
+      "size_formatted": "4GB",
+      "type": "safetensors",
+      "isLFS": true,
+      "category": "model",
+      "tensor_count": 37,
+      "tensor_info": {
+        "total_tensors": 37,
+        "dtypes": {
+          "BF16": 37
+        },
+        "total_parameters": 2390794240,
+        "layer_info": {
+          "model": 37
+        }
+      },
+      "sample_tensors": "    - model.layers.16.input_layernorm.weight: shape=[5120], dtype=BF16, params=5,120\n    - model.layers.16.mlp.down_proj.weight: shape=[5120,32768], dtype=BF16, params=167,772,160\n    - model.layers.16.mlp.gate_proj.weight: shape=[32768,5120], dtype=BF16, params=167,772,160\n    - model.layers.16.mlp.up_proj.weight: shape=[32768,5120], dtype=BF16, params=167,772,160\n    - model.layers.16.post_attention_layernorm.weight: shape=[5120], dtype=BF16, params=5,120"
     },
     {
       "name": "model-00006-of-00010.safetensors",
       "size": 4781592816,
-      "size_formatted": "4GB"
+      "size_formatted": "4GB",
+      "type": "safetensors",
+      "isLFS": true,
+      "category": "model",
+      "tensor_count": 37,
+      "tensor_info": {
+        "total_tensors": 37,
+        "dtypes": {
+          "BF16": 37
+        },
+        "total_parameters": 2390794240,
+        "layer_info": {
+          "model": 37
+        }
+      },
+      "sample_tensors": "    - model.layers.20.input_layernorm.weight: shape=[5120], dtype=BF16, params=5,120\n    - model.layers.20.mlp.down_proj.weight: shape=[5120,32768], dtype=BF16, params=167,772,160\n    - model.layers.20.mlp.up_proj.weight: shape=[32768,5120], dtype=BF16, params=167,772,160\n    - model.layers.20.post_attention_layernorm.weight: shape=[5120], dtype=BF16, params=5,120\n    - model.layers.21.input_layernorm.weight: shape=[5120], dtype=BF16, params=5,120"
     },
     {
       "name": "model-00007-of-00010.safetensors",
       "size": 4886471600,
-      "size_formatted": "4GB"
+      "size_formatted": "4GB",
+      "type": "safetensors",
+      "isLFS": true,
+      "category": "model",
+      "tensor_count": 43,
+      "tensor_info": {
+        "total_tensors": 43,
+        "dtypes": {
+          "BF16": 43
+        },
+        "total_parameters": 2443233280,
+        "layer_info": {
+          "model": 43
+        }
+      },
+      "sample_tensors": "    - model.layers.24.input_layernorm.weight: shape=[5120], dtype=BF16, params=5,120\n    - model.layers.24.mlp.down_proj.weight: shape=[5120,32768], dtype=BF16, params=167,772,160\n    - model.layers.24.post_attention_layernorm.weight: shape=[5120], dtype=BF16, params=5,120\n    - model.layers.25.input_layernorm.weight: shape=[5120], dtype=BF16, params=5,120\n    - model.layers.25.mlp.down_proj.weight: shape=[5120,32768], dtype=BF16, params=167,772,160"
     },
     {
       "name": "model-00008-of-00010.safetensors",
       "size": 4781592824,
-      "size_formatted": "4GB"
+      "size_formatted": "4GB",
+      "type": "safetensors",
+      "isLFS": true,
+      "category": "model",
+      "tensor_count": 37,
+      "tensor_info": {
+        "total_tensors": 37,
+        "dtypes": {
+          "BF16": 37
+        },
+        "total_parameters": 2390794240,
+        "layer_info": {
+          "model": 37
+        }
+      },
+      "sample_tensors": "    - model.layers.29.input_layernorm.weight: shape=[5120], dtype=BF16, params=5,120\n    - model.layers.29.mlp.down_proj.weight: shape=[5120,32768], dtype=BF16, params=167,772,160\n    - model.layers.29.mlp.gate_proj.weight: shape=[32768,5120], dtype=BF16, params=167,772,160\n    - model.layers.29.mlp.up_proj.weight: shape=[32768,5120], dtype=BF16, params=167,772,160\n    - model.layers.29.post_attention_layernorm.weight: shape=[5120], dtype=BF16, params=5,120"
     },
     {
       "name": "model-00009-of-00010.safetensors",
       "size": 4781592816,
-      "size_formatted": "4GB"
+      "size_formatted": "4GB",
+      "type": "safetensors",
+      "isLFS": true,
+      "category": "model",
+      "tensor_count": 37,
+      "tensor_info": {
+        "total_tensors": 37,
+        "dtypes": {
+          "BF16": 37
+        },
+        "total_parameters": 2390794240,
+        "layer_info": {
+          "model": 37
+        }
+      },
+      "sample_tensors": "    - model.layers.33.input_layernorm.weight: shape=[5120], dtype=BF16, params=5,120\n    - model.layers.33.mlp.down_proj.weight: shape=[5120,32768], dtype=BF16, params=167,772,160\n    - model.layers.33.mlp.up_proj.weight: shape=[32768,5120], dtype=BF16, params=167,772,160\n    - model.layers.33.post_attention_layernorm.weight: shape=[5120], dtype=BF16, params=5,120\n    - model.layers.34.input_layernorm.weight: shape=[5120], dtype=BF16, params=5,120"
     },
     {
       "name": "model-00010-of-00010.safetensors",
       "size": 3900777072,
-      "size_formatted": "3GB"
+      "size_formatted": "3GB",
+      "type": "safetensors",
+      "isLFS": true,
+      "category": "model",
+      "tensor_count": 23,
+      "tensor_info": {
+        "total_tensors": 23,
+        "dtypes": {
+          "BF16": 23
+        },
+        "total_parameters": 1950387200,
+        "layer_info": {
+          "lm_head": 1,
+          "model": 22
+        }
+      },
+      "sample_tensors": "    - lm_head.weight: shape=[131072,5120], dtype=BF16, params=671,088,640\n    - model.layers.37.input_layernorm.weight: shape=[5120], dtype=BF16, params=5,120\n    - model.layers.37.mlp.down_proj.weight: shape=[5120,32768], dtype=BF16, params=167,772,160\n    - model.layers.37.post_attention_layernorm.weight: shape=[5120], dtype=BF16, params=5,120\n    - model.layers.38.input_layernorm.weight: shape=[5120], dtype=BF16, params=5,120"
     }
   ],
+  "file_summary": {
+    "total_files": 36,
+    "model_files_count": 11,
+    "total_size": 94313663400,
+    "total_size_formatted": "87.84GB",
+    "file_types": {
+      "gitattributes": 1,
+      "md": 1,
+      "txt": 1,
+      "ds_store": 3,
+      "png": 14,
+      "json": 5,
+      "safetensors": 11
+    }
+  },
+  "extracted_metadata": {
+    "modelFiles": [
+      {
+        "name": "consolidated.safetensors",
+        "size": 47144846024,
+        "size_formatted": "43GB",
+        "type": "safetensors",
+        "isLFS": true,
+        "category": "model",
+        "tensor_count": 363,
+        "tensor_info": {
+          "total_tensors": 363,
+          "dtypes": {
+            "BF16": 363
+          },
+          "total_parameters": 23572403200,
+          "layer_info": {
+            "layers": 360,
+            "norm": 1,
+            "output": 1,
+            "tok_embeddings": 1
+          }
+        },
+        "sample_tensors": "    - layers.0.attention.wk.weight: shape=[1024,5120], dtype=BF16, params=5,242,880\n    - layers.0.attention.wo.weight: shape=[5120,4096], dtype=BF16, params=20,971,520\n    - layers.0.attention.wq.weight: shape=[4096,5120], dtype=BF16, params=20,971,520\n    - layers.0.attention.wv.weight: shape=[1024,5120], dtype=BF16, params=5,242,880\n    - layers.0.attention_norm.weight: shape=[5120], dtype=BF16, params=5,120"
+      },
+      {
+        "name": "model-00001-of-00010.safetensors",
+        "size": 4781571736,
+        "size_formatted": "4GB",
+        "type": "safetensors",
+        "isLFS": true,
+        "category": "model",
+        "tensor_count": 32,
+        "tensor_info": {
+          "total_tensors": 32,
+          "dtypes": {
+            "BF16": 32
+          },
+          "total_parameters": 2390784000,
+          "layer_info": {
+            "model": 32
+          }
+        },
+        "sample_tensors": "    - model.embed_tokens.weight: shape=[131072,5120], dtype=BF16, params=671,088,640\n    - model.layers.0.input_layernorm.weight: shape=[5120], dtype=BF16, params=5,120\n    - model.layers.0.mlp.down_proj.weight: shape=[5120,32768], dtype=BF16, params=167,772,160\n    - model.layers.0.mlp.gate_proj.weight: shape=[32768,5120], dtype=BF16, params=167,772,160\n    - model.layers.0.mlp.up_proj.weight: shape=[32768,5120], dtype=BF16, params=167,772,160"
+      },
+      {
+        "name": "model-00002-of-00010.safetensors",
+        "size": 4781592784,
+        "size_formatted": "4GB",
+        "type": "safetensors",
+        "isLFS": true,
+        "category": "model",
+        "tensor_count": 37,
+        "tensor_info": {
+          "total_tensors": 37,
+          "dtypes": {
+            "BF16": 37
+          },
+          "total_parameters": 2390794240,
+          "layer_info": {
+            "model": 37
+          }
+        },
+        "sample_tensors": "    - model.layers.3.input_layernorm.weight: shape=[5120], dtype=BF16, params=5,120\n    - model.layers.3.mlp.down_proj.weight: shape=[5120,32768], dtype=BF16, params=167,772,160\n    - model.layers.3.mlp.gate_proj.weight: shape=[32768,5120], dtype=BF16, params=167,772,160\n    - model.layers.3.mlp.up_proj.weight: shape=[32768,5120], dtype=BF16, params=167,772,160\n    - model.layers.3.post_attention_layernorm.weight: shape=[5120], dtype=BF16, params=5,120"
+      },
+      {
+        "name": "model-00003-of-00010.safetensors",
+        "size": 4781592800,
+        "size_formatted": "4GB",
+        "type": "safetensors",
+        "isLFS": true,
+        "category": "model",
+        "tensor_count": 37,
+        "tensor_info": {
+          "total_tensors": 37,
+          "dtypes": {
+            "BF16": 37
+          },
+          "total_parameters": 2390794240,
+          "layer_info": {
+            "model": 37
+          }
+        },
+        "sample_tensors": "    - model.layers.10.input_layernorm.weight: shape=[5120], dtype=BF16, params=5,120\n    - model.layers.10.mlp.down_proj.weight: shape=[5120,32768], dtype=BF16, params=167,772,160\n    - model.layers.10.mlp.gate_proj.weight: shape=[32768,5120], dtype=BF16, params=167,772,160\n    - model.layers.10.mlp.up_proj.weight: shape=[32768,5120], dtype=BF16, params=167,772,160\n    - model.layers.10.post_attention_layernorm.weight: shape=[5120], dtype=BF16, params=5,120"
+      },
+      {
+        "name": "model-00004-of-00010.safetensors",
+        "size": 4886471600,
+        "size_formatted": "4GB",
+        "type": "safetensors",
+        "isLFS": true,
+        "category": "model",
+        "tensor_count": 43,
+        "tensor_info": {
+          "total_tensors": 43,
+          "dtypes": {
+            "BF16": 43
+          },
+          "total_parameters": 2443233280,
+          "layer_info": {
+            "model": 43
+          }
+        },
+        "sample_tensors": "    - model.layers.11.input_layernorm.weight: shape=[5120], dtype=BF16, params=5,120\n    - model.layers.11.mlp.down_proj.weight: shape=[5120,32768], dtype=BF16, params=167,772,160\n    - model.layers.11.post_attention_layernorm.weight: shape=[5120], dtype=BF16, params=5,120\n    - model.layers.12.input_layernorm.weight: shape=[5120], dtype=BF16, params=5,120\n    - model.layers.12.mlp.down_proj.weight: shape=[5120,32768], dtype=BF16, params=167,772,160"
+      },
+      {
+        "name": "model-00005-of-00010.safetensors",
+        "size": 4781592824,
+        "size_formatted": "4GB",
+        "type": "safetensors",
+        "isLFS": true,
+        "category": "model",
+        "tensor_count": 37,
+        "tensor_info": {
+          "total_tensors": 37,
+          "dtypes": {
+            "BF16": 37
+          },
+          "total_parameters": 2390794240,
+          "layer_info": {
+            "model": 37
+          }
+        },
+        "sample_tensors": "    - model.layers.16.input_layernorm.weight: shape=[5120], dtype=BF16, params=5,120\n    - model.layers.16.mlp.down_proj.weight: shape=[5120,32768], dtype=BF16, params=167,772,160\n    - model.layers.16.mlp.gate_proj.weight: shape=[32768,5120], dtype=BF16, params=167,772,160\n    - model.layers.16.mlp.up_proj.weight: shape=[32768,5120], dtype=BF16, params=167,772,160\n    - model.layers.16.post_attention_layernorm.weight: shape=[5120], dtype=BF16, params=5,120"
+      },
+      {
+        "name": "model-00006-of-00010.safetensors",
+        "size": 4781592816,
+        "size_formatted": "4GB",
+        "type": "safetensors",
+        "isLFS": true,
+        "category": "model",
+        "tensor_count": 37,
+        "tensor_info": {
+          "total_tensors": 37,
+          "dtypes": {
+            "BF16": 37
+          },
+          "total_parameters": 2390794240,
+          "layer_info": {
+            "model": 37
+          }
+        },
+        "sample_tensors": "    - model.layers.20.input_layernorm.weight: shape=[5120], dtype=BF16, params=5,120\n    - model.layers.20.mlp.down_proj.weight: shape=[5120,32768], dtype=BF16, params=167,772,160\n    - model.layers.20.mlp.up_proj.weight: shape=[32768,5120], dtype=BF16, params=167,772,160\n    - model.layers.20.post_attention_layernorm.weight: shape=[5120], dtype=BF16, params=5,120\n    - model.layers.21.input_layernorm.weight: shape=[5120], dtype=BF16, params=5,120"
+      },
+      {
+        "name": "model-00007-of-00010.safetensors",
+        "size": 4886471600,
+        "size_formatted": "4GB",
+        "type": "safetensors",
+        "isLFS": true,
+        "category": "model",
+        "tensor_count": 43,
+        "tensor_info": {
+          "total_tensors": 43,
+          "dtypes": {
+            "BF16": 43
+          },
+          "total_parameters": 2443233280,
+          "layer_info": {
+            "model": 43
+          }
+        },
+        "sample_tensors": "    - model.layers.24.input_layernorm.weight: shape=[5120], dtype=BF16, params=5,120\n    - model.layers.24.mlp.down_proj.weight: shape=[5120,32768], dtype=BF16, params=167,772,160\n    - model.layers.24.post_attention_layernorm.weight: shape=[5120], dtype=BF16, params=5,120\n    - model.layers.25.input_layernorm.weight: shape=[5120], dtype=BF16, params=5,120\n    - model.layers.25.mlp.down_proj.weight: shape=[5120,32768], dtype=BF16, params=167,772,160"
+      },
+      {
+        "name": "model-00008-of-00010.safetensors",
+        "size": 4781592824,
+        "size_formatted": "4GB",
+        "type": "safetensors",
+        "isLFS": true,
+        "category": "model",
+        "tensor_count": 37,
+        "tensor_info": {
+          "total_tensors": 37,
+          "dtypes": {
+            "BF16": 37
+          },
+          "total_parameters": 2390794240,
+          "layer_info": {
+            "model": 37
+          }
+        },
+        "sample_tensors": "    - model.layers.29.input_layernorm.weight: shape=[5120], dtype=BF16, params=5,120\n    - model.layers.29.mlp.down_proj.weight: shape=[5120,32768], dtype=BF16, params=167,772,160\n    - model.layers.29.mlp.gate_proj.weight: shape=[32768,5120], dtype=BF16, params=167,772,160\n    - model.layers.29.mlp.up_proj.weight: shape=[32768,5120], dtype=BF16, params=167,772,160\n    - model.layers.29.post_attention_layernorm.weight: shape=[5120], dtype=BF16, params=5,120"
+      },
+      {
+        "name": "model-00009-of-00010.safetensors",
+        "size": 4781592816,
+        "size_formatted": "4GB",
+        "type": "safetensors",
+        "isLFS": true,
+        "category": "model",
+        "tensor_count": 37,
+        "tensor_info": {
+          "total_tensors": 37,
+          "dtypes": {
+            "BF16": 37
+          },
+          "total_parameters": 2390794240,
+          "layer_info": {
+            "model": 37
+          }
+        },
+        "sample_tensors": "    - model.layers.33.input_layernorm.weight: shape=[5120], dtype=BF16, params=5,120\n    - model.layers.33.mlp.down_proj.weight: shape=[5120,32768], dtype=BF16, params=167,772,160\n    - model.layers.33.mlp.up_proj.weight: shape=[32768,5120], dtype=BF16, params=167,772,160\n    - model.layers.33.post_attention_layernorm.weight: shape=[5120], dtype=BF16, params=5,120\n    - model.layers.34.input_layernorm.weight: shape=[5120], dtype=BF16, params=5,120"
+      },
+      {
+        "name": "model-00010-of-00010.safetensors",
+        "size": 3900777072,
+        "size_formatted": "3GB",
+        "type": "safetensors",
+        "isLFS": true,
+        "category": "model",
+        "tensor_count": 23,
+        "tensor_info": {
+          "total_tensors": 23,
+          "dtypes": {
+            "BF16": 23
+          },
+          "total_parameters": 1950387200,
+          "layer_info": {
+            "lm_head": 1,
+            "model": 22
+          }
+        },
+        "sample_tensors": "    - lm_head.weight: shape=[131072,5120], dtype=BF16, params=671,088,640\n    - model.layers.37.input_layernorm.weight: shape=[5120], dtype=BF16, params=5,120\n    - model.layers.37.mlp.down_proj.weight: shape=[5120,32768], dtype=BF16, params=167,772,160\n    - model.layers.37.post_attention_layernorm.weight: shape=[5120], dtype=BF16, params=5,120\n    - model.layers.38.input_layernorm.weight: shape=[5120], dtype=BF16, params=5,120"
+      }
+    ],
+    "configFiles": [
+      {
+        "name": "config.json",
+        "size": 641,
+        "size_formatted": "641B",
+        "category": "model",
+        "isLFS": false
+      },
+      {
+        "name": "generation_config.json",
+        "size": 132,
+        "size_formatted": "132B",
+        "category": "generation",
+        "isLFS": false
+      }
+    ],
+    "codeFiles": [],
+    "documentationFiles": [
+      {
+        "name": "README.md",
+        "size": 18772,
+        "size_formatted": "18KB",
+        "type": "README",
+        "isLFS": false
+      }
+    ],
+    "otherFiles": [
+      {
+        "name": ".gitattributes",
+        "size": 2314,
+        "size_formatted": "2KB",
+        "type": "unknown",
+        "isLFS": false
+      },
+      {
+        "name": "SYSTEM_PROMPT.txt",
+        "size": 5651,
+        "size_formatted": "5KB",
+        "type": ".txt",
+        "isLFS": false
+      },
+      {
+        "name": "assets/.DS_Store",
+        "size": 8196,
+        "size_formatted": "8KB",
+        "type": "unknown",
+        "isLFS": false
+      },
+      {
+        "name": "assets/cline_config.png",
+        "size": 136880,
+        "size_formatted": "133KB",
+        "type": ".png",
+        "isLFS": true
+      },
+      {
+        "name": "assets/mistral_common_coverage/.DS_Store",
+        "size": 6148,
+        "size_formatted": "6KB",
+        "type": "unknown",
+        "isLFS": false
+      },
+      {
+        "name": "assets/mistral_common_coverage/coverage_distribution.png",
+        "size": 25600,
+        "size_formatted": "25KB",
+        "type": ".png",
+        "isLFS": false
+      },
+      {
+        "name": "assets/mistral_common_coverage/coverage_pie.png",
+        "size": 41537,
+        "size_formatted": "40KB",
+        "type": ".png",
+        "isLFS": false
+      },
+      {
+        "name": "assets/mistral_common_coverage/coverage_summary.png",
+        "size": 94947,
+        "size_formatted": "92KB",
+        "type": ".png",
+        "isLFS": false
+      },
+      {
+        "name": "assets/mistral_common_coverage/dependencies.png",
+        "size": 255036,
+        "size_formatted": "249KB",
+        "type": ".png",
+        "isLFS": true
+      },
+      {
+        "name": "assets/mistral_common_coverage/navigate.png",
+        "size": 556736,
+        "size_formatted": "543KB",
+        "type": ".png",
+        "isLFS": true
+      },
+      {
+        "name": "assets/mistral_common_coverage/prompt.png",
+        "size": 236054,
+        "size_formatted": "230KB",
+        "type": ".png",
+        "isLFS": true
+      },
+      {
+        "name": "assets/mistral_common_coverage/visualization.png",
+        "size": 240673,
+        "size_formatted": "235KB",
+        "type": ".png",
+        "isLFS": true
+      },
+      {
+        "name": "assets/open_hands_config.png",
+        "size": 80894,
+        "size_formatted": "78KB",
+        "type": ".png",
+        "isLFS": false
+      },
+      {
+        "name": "assets/space_invaders_pong/.DS_Store",
+        "size": 6148,
+        "size_formatted": "6KB",
+        "type": "unknown",
+        "isLFS": false
+      },
+      {
+        "name": "assets/space_invaders_pong/base_structure.png",
+        "size": 997604,
+        "size_formatted": "974KB",
+        "type": ".png",
+        "isLFS": true
+      },
+      {
+        "name": "assets/space_invaders_pong/game.png",
+        "size": 87455,
+        "size_formatted": "85KB",
+        "type": ".png",
+        "isLFS": false
+      },
+      {
+        "name": "assets/space_invaders_pong/prompt.png",
+        "size": 949135,
+        "size_formatted": "926KB",
+        "type": ".png",
+        "isLFS": true
+      },
+      {
+        "name": "assets/space_invaders_pong/task completed.png",
+        "size": 637340,
+        "size_formatted": "622KB",
+        "type": ".png",
+        "isLFS": true
+      },
+      {
+        "name": "assets/swe_benchmark.png",
+        "size": 150842,
+        "size_formatted": "147KB",
+        "type": ".png",
+        "isLFS": true
+      },
+      {
+        "name": "model.safetensors.index.json",
+        "size": 29931,
+        "size_formatted": "29KB",
+        "type": ".json",
+        "isLFS": false
+      },
+      {
+        "name": "params.json",
+        "size": 188,
+        "size_formatted": "188B",
+        "type": ".json",
+        "isLFS": false
+      },
+      {
+        "name": "tekken.json",
+        "size": 19399650,
+        "size_formatted": "18MB",
+        "type": ".json",
+        "isLFS": true
+      }
+    ],
+    "totalSize": 94313663400,
+    "totalCount": 11,
+    "fileTypes": {
+      "": 4,
+      ".md": 1,
+      ".txt": 1,
+      ".png": 14,
+      ".json": 5,
+      ".safetensors": 11
+    }
+  },
   "total_count": 11,
   "source_url": "https://huggingface.co/mistralai/Devstral-Small-2507",
-  "generated_at": "2025-07-14T15:18:37Z"
+  "generated_at": "2025-07-14T22:26:37.698Z"
 }
